@@ -1,0 +1,23 @@
+.heading-block {
+	font-weight: 600;
+	font: 48px "Calibri", sans-serif;
+	margin-top: 48px;
+	text-align: center;
+}
+
+.flex-container {
+	display: flex;
+	justify-content: space-between;
+	border-top: 1px solid black;
+	padding: 2% 0 3% 0;
+}
+
+.flex-heading {
+	font-weight: 500px;
+	font: 28px "Calibri", sans-serif;
+	width: 40%;
+}
+
+.flex-content {
+	font: 24px "Calibri", sans-serif;
+}

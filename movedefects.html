@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ua">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1" description = "Об'єкти доступності на карті Луцька для людей з вадами рухового апарату. Об'єкти на карті для людей з вадами рухового апарату." keywords = "доступний Луцьк, для людей з вадами рухового апарату, для людей з обмеженими можливостями, сервіс для інвалідів, доступні об'єкти для інвалідів, пандуси Луцьк, для людей з вадами руху луцьк, споруди для інвалідів Луцьк, будинки для інвалідів Луцьк, об'єкти доступності Луцьк">
+
+    <meta property="og:url"           content="https://www.your-domain.com/your-page.html" />
+<meta property="og:type"          content="website" />
+<meta property="og:title"         content="Your Website Title" />
+<meta property="og:description"   content="Your description" />
+<meta property="og:image"         content="https://www.your-domain.com/path/image.jpg" />
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Доступний Луцьк | Об'єкти доступності на карті для людей з вадами рухового апарату</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/colors.css">
+    <link rel="stylesheet" type="text/css" href="css/media.css">
+    <link rel="stylesheet" type="text/css" href="css/map.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+      integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+      crossorigin=""/>
+      <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@700&display=swap" rel="stylesheet">
+      <script src="https://kit.fontawesome.com/18d919ba4a.js" crossorigin="anonymous"></script>
+      <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+      <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+      <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->
+    </head>
+    <body class = "white">
+      <header>
+        <div class = "header-wrapper">
+          <div class = "outher-wrapper">
+            <img src = "img/logo.svg" class = "logo">
+            <div class = "inner-wrapper">
+              <nav class="navbar menu menu-map">
+                <ul>
+                  <li class="main-page-link"><a href="index.html">Головна сторінка</a></li>
+                  <li class="about-link"><a href="about.html">Про проект</a></li>
+                  <li class = "questions-link"><a href="faq.html">Питання-Відповіді</a></li>
+                </ul>
+              </nav>
+            <div class = "acessibility">
+              <a href = "index-eyedisabilities.html">
+                <div class = "top-btn-eyedissabilities">
+                  <img src = "img/eyeglasses.svg" alt = "eyeglasses" class = "eyeglasses">  Людям з порушенням зору
+                </div>
+              </a>
+            </div>  
+            </div>
+          </div>
+        </div>
+      </header>
+            <div class = "menubutton">
+              <i class="fas fa-bars"></i><span>Відкрити меню</span>
+            </div>
+      <section class = "content-section"> 
+
+        <div class = "map-main-content">
+          <div id = "map"></div>
+          <div class = "map-menu-hidden">Об'єкти  &nbsp;  <span>&#709;</span></div> 
+                        <nav class = "item-questions-mobile">
+                <a href = "https://e-dem.ua/0710100000" target = "_blank" class = "">
+          <img src = "img/question.svg" alt = "Запитання" class = "">
+          <p class = "map-question">Запитати</p>
+      </a>
+                <!-- Your share button code -->
+<div class="fb-share-button" 
+data-href="https://www.your-domain.com/your-page.html" 
+data-layout="button_count">
+</div> 
+              </nav>
+          <div class = "map-menu"> 
+
+            <div class = "item-map-menu black-hover"><a href = "brailfont.html" class = "sound-eye">
+              <img src = "img/icon-braille.svg" alt = "Для незрячих людей" class = "map-image image-black">
+              <h2 class = "h2-black">Для незрячих людей</h2>            
+            </a>
+          </div>
+            <div class = "item-map-menu violet-hover"><a href = "wheelchairs.html" class = "sound-wheelchair">
+              <img src = "img/icon-wheelchair.svg" alt = "Для людей на візках-колясках" class = "map-image image-violet">
+              <h2 class = "h2-violet">Для людей на кріслах-візках</h2>            
+          </a>
+          </div>
+          <div class = "item-map-menu blue-hover"><a href = "movedefects.html" class = "sound-movedefects">
+            <img src = "img/icon-movedefect.svg" alt = "Для людей з вадами руху" class = "map-image image-blue">
+            <h2 class = "h2-blue">Для людей з вадами рухового апарату</h2>          
+        </a>
+        </div>
+        <div class = "item-map-menu yellow-hover"><a href = "transport.html" class = "sound-transport">
+          <img src = "img/icon-transport.svg" alt = "Доступний транспорт" class = "map-image">
+          <h2>Доступний транспорт</h2>        
+      </a>
+      </div>
+        <div class = "item-map-menu item-questions"><a href = "https://e-dem.ua/0710100000" target = "_blank">
+          <img src = "img/question.svg" alt = "Запитання" class = "">
+          <p class = "map-question">Запитати</p>
+      </a>
+                <br><br>
+          <!-- Your share button code -->
+<div class="fb-share-button" 
+data-href="https://www.your-domain.com/your-page.html" 
+data-layout="button_count">
+</div> 
+      </div>
+          </div>
+        </div>
+
+      </section>
+<footer>
+  <div class = "inner-footer">
+<h3 class = "footer-h3">Проєкт створено за підтримки</h3>
+<div class = "signs-wrapper">
+<img src = "img/hackforlocals-2.jpg" alt = "Hack for locals 2.0">
+<img src = "img/MDT-ua.png" alt = "Міністерство цифрової трансформації">
+<img src = "img/happymonday.png" alt = "Платформа Happy Monday">
+<img src = "img/oon.png" alt = "PROON">
+<img src = "img/it-inclusive.png" alt = "IT-Inclusive">
+</div>
+</div>
+</div>
+
+</footer>
+<div class = "bottom-footer">
+<p><span class = "copyright">© 2020 «Hack for locals 2.0». Всі права захищено.</span><br>
+Даний веб-ресурс був розроблений за підтримки «Hack for locals 2.0» в контексті концепції «Відкриті дані міст».</p>
+</div>
+<!--<script type="text/javascript" src = "js/eyedisabilities.js"></script>  -->
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<script>
+$(".menubutton").click(function() {
+$(".menu").slideToggle(100);
+});
+
+$(".map-menu-hidden").click(function() {
+$(".map-menu").slideToggle(100);
+});
+</script>
+
+  <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+  integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+  crossorigin=""></script>
+  <script src="js/movedefects.js" type="text/javascript"></script>
+  <script src="js/movedefects-coord.js" type="text/javascript"></script>
+  <script type="text/javascript" src = "js/map-colors.js"></script>
+
+  <!-- Load Facebook SDK for JavaScript -->
+
+<script>(function(d, s, id) {
+var js, fjs = d.getElementsByTagName(s)[0];
+if (d.getElementById(id)) return;
+js = d.createElement(s); js.id = id;
+js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+  
+</body>
+</html>
